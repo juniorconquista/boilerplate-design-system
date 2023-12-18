@@ -1,0 +1,108 @@
+{
+  "font": {
+    "family": {
+      "sans": {
+        "value": "Geist, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', arial, sans-serif",
+        "comment": "Font family value by default, to use in css and set components font."
+      },
+      "mono": {
+        "value": "Geist Mono, 'Roboto Mono', monospace",
+        "comment": "Monospace font family value for usage within code blocks and code elements."
+      }
+    },
+    "size": {
+      "body": {
+        "caption": {
+          "value": "{font.size.3}",
+          "comment": "It can be used for caption text and very small components like labels, inputs or chips. Must not be used for body text."
+        },
+        "base": {
+          "value": "{font.size.3-5}",
+          "comment": "It can be used for plain text and large amounts of content."
+        },
+        "highlight": {
+          "value": "{font.size.4}",
+          "comment": "It can be used for highlighted text or titles with the lowest possible importance."
+        }
+      },
+      "title": {
+        "h1": {
+          "value": "{font.size.8}",
+          "comment": "Main hierarchy headings, reserved for a single use per page."
+        },
+        "h2": {
+          "value": "{font.size.6}",
+          "comment": "Secondary hierarchy headings that are used to divide large sections of content on a page"
+        },
+        "h3": { "value": "{font.size.5}" },
+        "h4": {
+          "value": "{font.size.4-5}",
+          "comment": "It can be used for low hierarchy headings with the second lowest possible importance."
+        },
+        "h5": {
+          "value": "{font.size.4}",
+          "comment": "It can be used for highlighted text or titles with the lowest possible importance."
+        },
+        "h6": { "value": "{font.size.3-5}" }
+      }
+    },
+    "weight": {
+      "regular": {
+        "value": "400",
+        "comment": "Plain text with regular weight, can be combined with highlight, base or caption font-size."
+      },
+      "medium": {
+        "value": "500",
+        "comment": "Plain text with medium weight, can be combined with every font-size."
+      },
+      "bold": {
+        "value": "600",
+        "comment": "Plain text with bold weight, can be combined with highlight, base or caption font-size."
+      }
+    }
+  },
+  "line": {
+    "height": {
+      "body": {
+        "caption": {
+          "value": "{line.height.3-5}",
+          "comment": "Combined use with: font-size-body-caption"
+        },
+        "base": {
+          "value": "{line.height.4-5}",
+          "comment": "Combined use with: font-size-body-base"
+        },
+        "highlight": {
+          "value": "{line.height.5}",
+          "comment": "Combined use with: font-size-body-highlight"
+        }
+      },
+      "title": {
+        "h1": {
+          "value": "{line.height.11}",
+          "comment": "Combined use with: font-size-title-h1"
+        },
+        "h2": {
+          "value": "{line.height.8}",
+          "comment": "Combined use with: font-size-title-h2"
+        },
+        "h3": {
+          "value": "{line.height.7}",
+          "comment": "Combined use with: font-size-title-h3"
+        },
+        "h4": {
+          "value": "{line.height.6}",
+          "comment": "Combined use with: font-size-title-h4"
+        },
+        "h5": {
+          "value": "{line.height.5}",
+          "comment": "Combined use with: font-size-title-h5"
+        },
+        "h6": {
+          "value": "{line.height.4-5}",
+          "comment": "Combined use with: font-size-title-h6"
+        }
+      }
+    }
+  }
+}

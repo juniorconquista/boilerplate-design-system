@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["./src"]
+  // "compilerOptions": {
+  //   "module": "esnext",
+  //   "paths": {
+  //     "@bmg-ds/tokens": ["../tokens"],
+  //     "@bmg-ds/webpack": ["../core/webpack"]
+  //   }
+  // },
+  // "ts-node": {
+  //   "compilerOptions": {
+  //     "module": "commonJS"
+  //   }
+  // }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@bmg-ds/button",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn g:webpack",
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "dependencies": {
+    "@bmg-ds/skeleton": "workspace:^"
+  },
+  "peerDependencies": {
+    "@nimbus-ds/styles": "workspace:^",
+    "react": "^16.8 || ^17.0 || ^18.0",
+    "react-dom": "^16.8 || ^17.0 || ^18.0"
+  },
+  "homepage": "https://github.com/juniorconquista/boilerplate-design-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorconquista/boilerplate-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juniorconquista/boilerplate-design-system/issues"
+  },
+  "devDependencies": {
+    "@bmg-ds/icon": "workspace:^",
+    "@bmg-ds/icons": "workspace:^",
+    "@bmg-ds/skeleton": "workspace:^",
+    "@bmg-ds/webpack": "workspace:^"
+  }
+}

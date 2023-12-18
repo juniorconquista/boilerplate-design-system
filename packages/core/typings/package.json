@@ -1,0 +1,23 @@
+{
+  "name": "@bmg-ds/typings",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn g:webpack",
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "homepage": "https://github.com/juniorconquista/boilerplate-design-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorconquista/boilerplate-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juniorconquista/boilerplate-design-system/issues"
+  },
+  "devDependencies": {
+    "@bmg-ds/webpack": "workspace:^"
+  }
+}

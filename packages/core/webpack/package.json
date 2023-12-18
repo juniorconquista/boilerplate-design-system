@@ -1,0 +1,35 @@
+{
+  "name": "@bmg-ds/webpack",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc --outDir dist --declaration true",
+    "clean": "rm -rf dist",
+    "g:webpack": "cd $INIT_CWD && webpack"
+  },
+  "homepage": "https://github.com/juniorconquista/boilerplate-design-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorconquista/boilerplate-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juniorconquista/boilerplate-design-system/issues"
+  },
+  "devDependencies": {
+    "@types/dashify": "^1.0.3",
+    "@types/glob": "^8.1.0",
+    "@types/webpack": "^5.28.5",
+    "@vanilla-extract/webpack-plugin": "^2.3.1",
+    "css-minimizer-webpack-plugin": "5.0.1",
+    "dashify": "^2.0.0",
+    "dts-bundle-generator": "^9.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0",
+    "webpack-shell-plugin-next": "^2.3.1"
+  }
+}

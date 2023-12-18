@@ -1,0 +1,32 @@
+{
+  "name": "@bmg-ds/styles",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "build": "webpack",
+    "clean": "rm -rf dist",
+    "version": "yarn version"
+  },
+  "homepage": "https://github.com/juniorconquista/boilerplate-design-system",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorconquista/boilerplate-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juniorconquista/boilerplate-design-system/issues"
+  },
+  "devDependencies": {
+    "@bmg-ds/tokens": "workspace:^",
+    "@bmg-ds/webpack": "workspace:^",
+    "@vanilla-extract/css": "^1.14.0",
+    "@vanilla-extract/dynamic": "^2.1.0",
+    "@vanilla-extract/recipes": "^0.5.1",
+    "@vanilla-extract/sprinkles": "^1.6.1",
+    "rainbow-sprinkles": "^0.17.0",
+    "webpack": "^5.89.0",
+    "webpack-merge": "^5.10.0",
+    "webpack-shell-plugin-next": "^2.3.1"
+  }
+}
