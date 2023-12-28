@@ -2,9 +2,9 @@
   "id": "icon",
   "name": "Icon",
   "totalProps": 3,
-  "packageName": "@nimbus-ds/icon",
-  "version": "3.0.0",
-  "docLink": "https://nimbus.nuvemshop.com.br/documentation/atomic-components/icon",
+  "packageName": "@bmg-ds/icon",
+  "version": "1.0.0",
+  "docLink": "https://bmg.com.br/documentation/atomics-components/icon",
   "props": [
     {
       "description": "The SVG contents to display in the Icon.",
@@ -66,13 +66,77 @@
       "props": [
         {
           "description": "Width of the skeleton. Useful when the skeleton is inside an inline element with no width of its own.",
-          "type": "string",
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "xs": {
+                  "type": "string",
+                  "title": "xs"
+                },
+                "md": {
+                  "type": "string",
+                  "title": "md"
+                },
+                "lg": {
+                  "type": "string",
+                  "title": "lg"
+                },
+                "xl": {
+                  "type": "string",
+                  "title": "xl"
+                }
+              },
+              "additionalProperties": false,
+              "propertyOrder": [
+                "xs",
+                "md",
+                "lg",
+                "xl"
+              ]
+            },
+            {
+              "type": "string"
+            }
+          ],
           "title": "width",
           "required": false
         },
         {
           "description": "Height of the skeleton. Useful when you don't want to adapt the skeleton to a text element but for instance a card.",
-          "type": "string",
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "xs": {
+                  "type": "string",
+                  "title": "xs"
+                },
+                "md": {
+                  "type": "string",
+                  "title": "md"
+                },
+                "lg": {
+                  "type": "string",
+                  "title": "lg"
+                },
+                "xl": {
+                  "type": "string",
+                  "title": "xl"
+                }
+              },
+              "additionalProperties": false,
+              "propertyOrder": [
+                "xs",
+                "md",
+                "lg",
+                "xl"
+              ]
+            },
+            {
+              "type": "string"
+            }
+          ],
           "title": "height",
           "required": false
         },

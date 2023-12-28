@@ -75,7 +75,7 @@ export const asLink = {
   args: {
     as: "a",
     children: "Button as anchor",
-    href: "https://nimbus.tiendanube.com/",
+    href: "https://bmg.com/",
     target: "_blank",
   },
 };

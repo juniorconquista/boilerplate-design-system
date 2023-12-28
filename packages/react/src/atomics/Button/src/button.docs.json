@@ -2,9 +2,9 @@
   "id": "button",
   "name": "Button",
   "totalProps": 4,
-  "packageName": "@nimbus-ds/button",
-  "version": "2.5.0",
-  "docLink": "https://nimbus.nuvemshop.com.br/documentation/atomic-components/button",
+  "packageName": "@bmg-ds/button",
+  "version": "1.0.0",
+  "docLink": "https://bmg.com.br/documentation/atomics-components/button",
   "props": [
     {
       "default": "button",
@@ -58,7 +58,39 @@
       "props": [
         {
           "description": "Width of the skeleton. Useful when the skeleton is inside an inline element with no width of its own.",
-          "type": "string",
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "xs": {
+                  "type": "string",
+                  "title": "xs"
+                },
+                "md": {
+                  "type": "string",
+                  "title": "md"
+                },
+                "lg": {
+                  "type": "string",
+                  "title": "lg"
+                },
+                "xl": {
+                  "type": "string",
+                  "title": "xl"
+                }
+              },
+              "additionalProperties": false,
+              "propertyOrder": [
+                "xs",
+                "md",
+                "lg",
+                "xl"
+              ]
+            },
+            {
+              "type": "string"
+            }
+          ],
           "title": "width",
           "required": false
         },

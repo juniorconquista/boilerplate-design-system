@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
-    "build": "tsc --outDir dist --declaration true",
+    "build": "yarn g:tsc --outDir dist --declaration true",
     "clean": "rm -rf dist",
     "g:webpack": "cd $INIT_CWD && webpack"
   },

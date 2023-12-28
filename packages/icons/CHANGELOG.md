@@ -2,7 +2,7 @@
 
 @bmg-ds/icons is an open source icon system built by BMG.
 
-## 2023-02-15 `1.0.0`
+## 2023-12-13 `1.0.0`
 
 #### 🎉 New features
 

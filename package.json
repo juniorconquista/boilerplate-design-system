@@ -15,10 +15,11 @@
     "test:coverage": "yarn test --coverage",
     "test:staged": "yarn test --findRelatedTests",
     "test:watch": "yarn test --watch",
-    "start:dev": "yarn storybook",
+    "start:dev": "storybook dev -p 6006",
     "build:tokens": "turbo run build --filter=@bmg-ds/tokens",
     "build:storybook": "storybook build",
-    "storybook": "storybook dev -p 6006"
+    "build:docs": "babel-node -x .ts ./.scripts/json-documentation",
+    "g:tsc": "cd $INIT_CWD && tsc"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.6",
+    "@babel/node": "^7.22.19",
     "@babel/preset-env": "^7.23.6",
     "@babel/preset-typescript": "^7.23.3",
     "@babel/register": "^7.22.15",

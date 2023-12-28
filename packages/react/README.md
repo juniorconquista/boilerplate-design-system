@@ -1,44 +1,43 @@
-# `@nimbus-ds/components`
+# `@bmg-ds/components`
 
-[![@nimbus-ds/components](https://img.shields.io/npm/v/@nimbus-ds/components?label=%40nimbus-ds%2Fcomponents)](https://www.npmjs.com/package/@nimbus-ds/components)
 
-Nimbus components is a component library built with [React](https://reactjs.org), designed to help our teams and ecosystem build better products for our merchants.
+BMG components is a component library built with [React](https://reactjs.org).
 
 ## 🚀 Getting started
 
-Install `@nimbus-ds/components` using any package manager.
+Install `@bmg-ds/components` using any package manager.
 
 ```sh
-$ yarn add @nimbus-ds/components
+$ yarn add @bmg-ds/components
 # or
-$ npm install @nimbus-ds/components
+$ npm install @bmg-ds/components
 ```
 
 ## 💻 Usage
 
 ```jsx
-import { Button } from "@nimbus-ds/components";
+import { Button } from "@bmg-ds/components";
 
 const ComponentExample = () => <Button>Hello World</Button>;
 ```
 
-For more information about our components, check out our [Storybook](https://tiendanube.github.io/nimbus-design-system/).
+For more information about our components, check out our [Storybook]().
 
 ### Folder & file structures 📁 📄
 
 - For best practices in structure files please read this [document](https://redux.js.org/style-guide/style-guide#structure-files-as-feature-folders-with-single-file-logic)
-- When creating a new component, do so inside the **src/atomic** or **src/composite** directory
+- When creating a new component, do so inside the **src/atomics** or **src/composites** directory
 
 ```
   ├─ 📁 src
-  │  └─ 📁 atomic/composite
+  │  └─ 📁 atomics/composites
 ```
 
 - Every directory must contain a 📄 **CHANGELOG.md** which serves to document all changes and changes made to each component.
 
 ```
   ├─ 📁 src
-  │  ├─ 📁 atomic/composite
+  │  ├─ 📁 atomics/composites
   │  │  ├─ 📁 ComponentExample
   │  │  │  ├─ 📁 src
   │  │  │  └─ CHANGELOG.md
@@ -48,7 +47,7 @@ For more information about our components, check out our [Storybook](https://tie
 
 ```
   ├─ 📁 src
-  │  ├─ 📁 atomic/composite
+  │  ├─ 📁 atomics/composites
   │  │  ├─ 📁 ComponentExample
   │  │  │  ├─ 📁 src
   │  │  │  ├─ CHANGELOG.md
@@ -59,7 +58,7 @@ For more information about our components, check out our [Storybook](https://tie
 
 ```
   ├─ 📁 src
-  │  ├─ 📁 atomic/composite
+  │  ├─ 📁 atomics/composites
   │  │  ├─ 📁 ComponentExample
   │  │  │  ├─ 📁 src
   │  │  │  │  └─ ComponentExample.tsx
@@ -71,7 +70,7 @@ For more information about our components, check out our [Storybook](https://tie
 
 ```
   ├─ 📁 src
-  │  ├─ 📁 atomic/composite
+  │  ├─ 📁 atomics/composites
   │  │  ├─ 📁 ComponentExample
   │  │  │  ├─ 📁 src
   │  │  │  │  ├─ index.ts
@@ -84,7 +83,7 @@ For more information about our components, check out our [Storybook](https://tie
 
 ```
   ├─ 📁 src
-  │  ├─ 📁 atomic/composite
+  │  ├─ 📁 atomics/composites
   │  │  ├─ 📁 ComponentExample
   │  │  │  ├─ 📁 src
   │  │  │  │  ├─ index.ts
@@ -98,7 +97,7 @@ For more information about our components, check out our [Storybook](https://tie
 
 ```
   ├─ 📁 src
-  │  ├─ 📁 atomic/composite
+  │  ├─ 📁 atomics/composites
   │  │  ├─ 📁 ComponentExample
   │  │  │  ├─ 📁 src
   │  │  │  │  ├─ index.ts
@@ -113,7 +112,7 @@ For more information about our components, check out our [Storybook](https://tie
 
 ```
   ├─ 📁 src
-  │  ├─ 📁 atomic/composite
+  │  ├─ 📁 atomics/composites
   │  │  ├─ 📁 ComponentExample
   │  │  │  ├─ 📁 src
   │  │  │  │  ├─ index.ts
@@ -129,7 +128,7 @@ For more information about our components, check out our [Storybook](https://tie
 
 ```
   ├─ 📁 src
-  │  ├─ 📁 atomic/composite
+  │  ├─ 📁 atomics/composites
   │  │  ├─ 📁 ComponentExample
   │  │  │  ├─ 📁 src
   │  │  │  │  ├─ 📁 components

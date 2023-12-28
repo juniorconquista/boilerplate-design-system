@@ -2,7 +2,7 @@
 
 Bmg Styles deprive all styles needed to build components.
 
-## 2023-12-09 `1.0.0`
+## 2023-12-13 `1.0.0`
 
 #### 🎉 New features
 
