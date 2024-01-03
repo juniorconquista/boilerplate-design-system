@@ -28,9 +28,8 @@ try {
   }
 
   const removePackages = [
-    "nimbus-design-system",
-    "nimbus-helper",
-    "@nimbus-ds/webpack",
+    "bmg-design-system",
+    "@bmg-ds/webpack",
   ];
 
   const command = packageBuilder.getCommmandBuildNPM(

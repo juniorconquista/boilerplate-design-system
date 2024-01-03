@@ -1575,6 +1575,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bmg-ds/button@workspace:packages/react/src/atomics/Button":
+  version: 0.0.0-use.local
+  resolution: "@bmg-ds/button@workspace:packages/react/src/atomics/Button"
+  dependencies:
+    "@bmg-ds/icon": "workspace:^"
+    "@bmg-ds/icons": "workspace:^"
+    "@bmg-ds/skeleton": "workspace:^"
+    "@bmg-ds/webpack": "workspace:^"
+  peerDependencies:
+    "@nimbus-ds/styles": "workspace:^"
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@bmg-ds/components@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "@bmg-ds/components@workspace:packages/react"
@@ -1586,7 +1601,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bmg-ds/icons@workspace:packages/icons":
+"@bmg-ds/icon@workspace:^, @bmg-ds/icon@workspace:packages/react/src/atomics/Icon":
+  version: 0.0.0-use.local
+  resolution: "@bmg-ds/icon@workspace:packages/react/src/atomics/Icon"
+  dependencies:
+    "@bmg-ds/icons": "workspace:^"
+    "@bmg-ds/skeleton": "workspace:^"
+    "@bmg-ds/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
+"@bmg-ds/icons@workspace:^, @bmg-ds/icons@workspace:packages/icons":
   version: 0.0.0-use.local
   resolution: "@bmg-ds/icons@workspace:packages/icons"
   dependencies:
@@ -1602,6 +1630,17 @@ __metadata:
   dependencies:
     change-case: "npm:^4.1.2"
     typescript-json-schema: "npm:^0.55.0"
+  languageName: unknown
+  linkType: soft
+
+"@bmg-ds/skeleton@workspace:^, @bmg-ds/skeleton@workspace:packages/react/src/atomics/Skeleton":
+  version: 0.0.0-use.local
+  resolution: "@bmg-ds/skeleton@workspace:packages/react/src/atomics/Skeleton"
+  dependencies:
+    "@bmg-ds/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
   languageName: unknown
   linkType: soft
 
@@ -5921,29 +5960,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"body-parser@npm:1.20.1":
-  version: 1.20.1
-  resolution: "body-parser@npm:1.20.1"
-  dependencies:
-    bytes: "npm:3.1.2"
-    content-type: "npm:~1.0.4"
-    debug: "npm:2.6.9"
-    depd: "npm:2.0.0"
-    destroy: "npm:1.2.0"
-    http-errors: "npm:2.0.0"
-    iconv-lite: "npm:0.4.24"
-    on-finished: "npm:2.4.1"
-    qs: "npm:6.11.0"
-    raw-body: "npm:2.5.1"
-    type-is: "npm:~1.6.18"
-    unpipe: "npm:1.0.0"
-  checksum: a202d493e2c10a33fb7413dac7d2f713be579c4b88343cd814b6df7a38e5af1901fc31044e04de176db56b16d9772aa25a7723f64478c20f4d91b1ac223bf3b8
-  languageName: node
-  linkType: hard
-
-"boilerplate-design-system@workspace:.":
+"bmg-design-system@workspace:.":
   version: 0.0.0-use.local
-  resolution: "boilerplate-design-system@workspace:."
+  resolution: "bmg-design-system@workspace:."
   dependencies:
     "@babel/cli": "npm:^7.23.4"
     "@babel/core": "npm:^7.23.6"
@@ -5977,6 +5996,26 @@ __metadata:
     typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
+
+"body-parser@npm:1.20.1":
+  version: 1.20.1
+  resolution: "body-parser@npm:1.20.1"
+  dependencies:
+    bytes: "npm:3.1.2"
+    content-type: "npm:~1.0.4"
+    debug: "npm:2.6.9"
+    depd: "npm:2.0.0"
+    destroy: "npm:1.2.0"
+    http-errors: "npm:2.0.0"
+    iconv-lite: "npm:0.4.24"
+    on-finished: "npm:2.4.1"
+    qs: "npm:6.11.0"
+    raw-body: "npm:2.5.1"
+    type-is: "npm:~1.6.18"
+    unpipe: "npm:1.0.0"
+  checksum: a202d493e2c10a33fb7413dac7d2f713be579c4b88343cd814b6df7a38e5af1901fc31044e04de176db56b16d9772aa25a7723f64478c20f4d91b1ac223bf3b8
+  languageName: node
+  linkType: hard
 
 "boolbase@npm:^1.0.0":
   version: 1.0.0
