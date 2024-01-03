@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { skeleton } from "@bmg-ds/styles";
-import { argTypesConvert } from ".storybook/utils";
+import { argTypesConvert } from "./.storybook/utils";
 import { Skeleton } from "./Skeleton";
 
 const meta: Meta<typeof Skeleton> = {
@@ -19,6 +19,6 @@ export const base: Story = {
   args: {
     height: "3.125rem",
     width: "9.375rem",
-    borderRadius: "full"
+    borderRadius: "full",
   },
 };

@@ -7,6 +7,5 @@
     }
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "extends": ["@tiendanube/eslint-config"]
+  "plugins": ["@typescript-eslint"]
 }
