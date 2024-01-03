@@ -2,7 +2,6 @@ import React, { forwardRef } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import { ExternalLinkIcon } from "@bmg-ds/icons";
 import { Icon } from "@bmg-ds/icon";
-// import { Spinner } from "@bmg-ds/spinner";
 
 import { Button as ButtonComponent, ButtonProps } from "./Button";
 
@@ -51,18 +50,6 @@ export const icon: Story = {
     ),
   },
 };
-
-// export const loading: Story = {
-//   args: {
-//     appearance: "primary",
-//     children: (
-//       <>
-//         <Spinner color="currentColor" size="small" />
-//         Button
-//       </>
-//     ),
-//   },
-// };
 
 export const disabled: Story = {
   args: {

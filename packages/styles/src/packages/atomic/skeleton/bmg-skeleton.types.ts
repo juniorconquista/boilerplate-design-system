@@ -1,4 +1,4 @@
-import { Conditions } from "../../../index.d";
+import { Conditions } from "../../../index.types";
 import { skeletonSprinkle } from "./bmg-skeleton.css";
 
 const { properties: propertiesText } = skeletonSprinkle;

@@ -17,7 +17,7 @@ import {
   TransitionTiming,
   AlignSelf,
   WordBreak,
-} from "../index.d";
+} from "../index.types";
 import { baseColors } from "./base";
 
 export const aspectRatioProperties: AspectRatio[] = [
