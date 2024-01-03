@@ -4,8 +4,14 @@ import { render, screen } from "@testing-library/react";
 import { Skeleton } from "./Skeleton";
 import { SkeletonProps } from "./skeleton.types";
 
-const makeSut = (props: SkeletonProps) => {
-  render(<Skeleton {...props} data-testid="skeleton-element" />);
+const makeSut = (props: {
+  height?: string;
+  width?: string;
+  borderRadius?: string;
+}) => {
+  render(
+    <Skeleton {...(props as SkeletonProps)} data-testid="skeleton-element" />,
+  );
 };
 
 describe("GIVEN <Skeleton />", () => {
@@ -17,10 +23,10 @@ describe("GIVEN <Skeleton />", () => {
       });
       const skeleton = screen.getByTestId("skeleton-element");
       expect(skeleton.getAttribute("style")).toMatch(
-        /--width__\w{0,9}: 50rem;/,
+        /--width-xs__\w{0,9}: 50rem;/,
       );
       expect(skeleton.getAttribute("style")).toMatch(
-        /--height__\w{0,9}: 10rem;/,
+        /--height-xs__\w{0,9}: 10rem;/,
       );
     });
 
@@ -32,7 +38,7 @@ describe("GIVEN <Skeleton />", () => {
       });
       const skeleton = screen.getByTestId("skeleton-element");
       expect(skeleton.getAttribute("style")).toMatch(
-        /--borderRadius__\w{0,9}: 2rem;/,
+        /--borderRadius-xs__\w{0,9}: 2;/,
       );
     });
   });

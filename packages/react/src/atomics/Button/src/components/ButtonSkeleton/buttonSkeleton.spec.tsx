@@ -14,13 +14,13 @@ describe("GIVEN <Button.Skeleton />", () => {
       makeSut();
       const skeleton = screen.getByTestId("skeleton-element");
       expect(skeleton.getAttribute("style")).toMatch(
-        /--width__\w{0,9}: 4.75rem;/
+        /--width-xs__\w{0,9}: 4.75rem;/,
       );
       expect(skeleton.getAttribute("style")).toMatch(
-        /--height__\w{0,9}: 2.125rem;/
+        /--height-xs__\w{0,9}: 2.125rem;/,
       );
       expect(skeleton.getAttribute("style")).toMatch(
-        /--borderRadius__\w{0,9}: 0.5rem;/
+        /--borderRadius-xs__\w{0,9}: 2;/,
       );
     });
   });
