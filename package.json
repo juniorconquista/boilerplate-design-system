@@ -32,10 +32,11 @@
     "publish:npm:next": "",
     "publish:npm:stable": "",
     "pre:commit": "lint-staged",
-    "pre:push": "yarn test:coverage && yarn lint && yarn types:check && yarn bump:check",
+    "pre:push": "yarn test:coverage && yarn types:check && yarn bump:check",
     "prepare:husky": "husky install",
     "lint": "eslint packages --ext .jsx,.js,.ts,.tsx --quiet",
     "lint:fix": "yarn lint --fix",
+    "types:check": "tsc --skipLibCheck --noEmit",
     "reset": "yarn clean && rm -rf node_modules .yarn/cache",
     "g:tsc": "cd $INIT_CWD && tsc"
   },
