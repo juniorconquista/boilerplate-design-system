@@ -1,0 +1,10 @@
+{
+  "id": "box",
+  "name": "Box",
+  "totalProps": 0,
+  "packageName": "@bmg-ds/box",
+  "version": "1.0.0",
+  "docLink": "https://bmg.com.br/documentation/atomics-components/box",
+  "props": [],
+  "subComponents": []
+}

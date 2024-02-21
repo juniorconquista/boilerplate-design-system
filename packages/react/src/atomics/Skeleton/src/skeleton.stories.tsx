@@ -4,7 +4,7 @@ import { argTypesConvert } from ".storybook/utils";
 import { Skeleton } from "./Skeleton";
 
 const meta: Meta<typeof Skeleton> = {
-  title: "Atomic/Skeleton",
+  title: "Atomics/Skeleton",
   component: Skeleton,
   tags: ["autodocs"],
   argTypes: {

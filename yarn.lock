@@ -1591,6 +1591,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bmg-ds/box@workspace:packages/react/src/atomics/Box":
+  version: 0.0.0-use.local
+  resolution: "@bmg-ds/box@workspace:packages/react/src/atomics/Box"
+  dependencies:
+    "@bmg-ds/webpack": "workspace:^"
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  languageName: unknown
+  linkType: soft
+
 "@bmg-ds/button@workspace:packages/react/src/atomics/Button":
   version: 0.0.0-use.local
   resolution: "@bmg-ds/button@workspace:packages/react/src/atomics/Button"
@@ -1600,7 +1611,7 @@ __metadata:
     "@bmg-ds/skeleton": "workspace:^"
     "@bmg-ds/webpack": "workspace:^"
   peerDependencies:
-    "@nimbus-ds/styles": "workspace:^"
+    "@bmg-ds/styles": "workspace:^"
     react: ^16.8 || ^17.0 || ^18.0
     react-dom: ^16.8 || ^17.0 || ^18.0
   languageName: unknown

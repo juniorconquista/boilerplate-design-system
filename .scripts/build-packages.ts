@@ -11,30 +11,18 @@ try {
   const paths = glob.sync(path.join(".yarn/versions/*.yml"));
   if (!paths.length) {
     throw new Error(
-      "The versions file was not found so it was not possible to perform the build..."
+      "The versions file was not found so it was not possible to perform the build...",
     );
   }
 
   const packageBuilder = new PackageBuilder();
   const packagesToBuild = packageBuilder.getPackagesToBuild(paths[0]);
-  const nimbusHelper = packagesToBuild.find(
-    (packageToBuild) => packageToBuild === "nimbus-helper"
-  );
-  if (!!nimbusHelper) {
-    packageBuilder.triggerBuildGithubAction(
-      "https://api.github.com/repos/tiendanube/nimbus-design-system/actions/workflows/62481985/dispatches",
-      { ref: "master" }
-    );
-  }
 
-  const removePackages = [
-    "bmg-design-system",
-    "@bmg-ds/webpack",
-  ];
+  const removePackages = ["bmg-design-system", "@bmg-ds/webpack"];
 
   const command = packageBuilder.getCommmandBuildNPM(
     packagesToBuild,
-    removePackages
+    removePackages,
   );
   packageBuilder.execCommand(command);
 } catch (err) {

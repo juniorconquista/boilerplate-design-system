@@ -1,5 +1,5 @@
 {
-  "name": "@bmg-ds/button",
+  "name": "@bmg-ds/box",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -13,11 +13,7 @@
     "clean": "rm -rf dist",
     "version": "yarn version"
   },
-  "dependencies": {
-    "@bmg-ds/skeleton": "workspace:^"
-  },
   "peerDependencies": {
-    "@bmg-ds/styles": "workspace:^",
     "react": "^16.8 || ^17.0 || ^18.0",
     "react-dom": "^16.8 || ^17.0 || ^18.0"
   },
@@ -30,9 +26,6 @@
     "url": "https://github.com/juniorconquista/boilerplate-design-system/issues"
   },
   "devDependencies": {
-    "@bmg-ds/icon": "workspace:^",
-    "@bmg-ds/icons": "workspace:^",
-    "@bmg-ds/skeleton": "workspace:^",
     "@bmg-ds/webpack": "workspace:^"
   }
 }

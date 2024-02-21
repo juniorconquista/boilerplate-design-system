@@ -4,7 +4,7 @@ import { CodeIcon } from "@bmg-ds/icons";
 import { Icon } from "./Icon";
 
 const meta: Meta<typeof Icon> = {
-  title: "Atomic/Icon",
+  title: "Atomics/Icon",
   component: Icon,
   argTypes: {
     source: { control: { disable: true } },
